@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Spring MVC</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/index.css}"/>
+</head>
+<body>
+	<h1 th:text="${hotel.name}"></h1>
+	<img th:src="${hotel.image}" width="100" height="100">
+	
+	<div class="hotel">
+		
+		<div th:each="lis:${list}">
+			<p th:text="${lis.name}"></p>
+			<img th:src="${lis.image}" width="100" height="100">
+			<p th:text="${lis.description}"></p>
+			<p th:text="${lis.type}"></p>
+			<p th:text="${lis.price}"></p>
+			
+			<button>Đặt phòng</button>
+		</div>
+		
+	</div>
+</body>
+</html>

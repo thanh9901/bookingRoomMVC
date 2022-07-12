@@ -1,0 +1,6 @@
+.hotel{
+	display:flex;
+}
+.hotel > div{
+	margin:50px;
+}
